@@ -13,12 +13,14 @@ local packer_bootstrap = ensure_packer()
 
 return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
-  use 'folke/tokyonight.nvim'
+  --use 'folke/tokyonight.nvim'
+  use { "catppuccin/nvim", as = "catppuccin" }
   -- might wanna change below plugins
   -- file browser and icons
   use 'nvim-tree/nvim-tree.lua'
   use 'nvim-tree/nvim-web-devicons'
   use 'nvim-lualine/lualine.nvim'
+  use 'NvChad/nvim-colorizer.lua'
   use {"akinsho/toggleterm.nvim", tag = '*', config = function()
   require("toggleterm").setup()
   end}

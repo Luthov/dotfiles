@@ -22,6 +22,8 @@
   # check the local terminfo database and use `alacritty` if it is
   # available, otherwise `xterm-256color` is used.
   #TERM: alacritty
+import:
+  - ~/.config/alacritty/catppuccin/catppuccin-macchiato.yml
 
 window:
   # Window dimensions (changes require restart)
